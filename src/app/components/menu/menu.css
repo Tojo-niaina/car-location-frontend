@@ -1,0 +1,140 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    transition: background .3s ease, box-shadow .3s ease;
+}
+
+.navbar-container {
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LINKS */
+.nav-links {
+    display: flex;
+    gap: 36px;
+}
+
+.nav-links a {
+    color: #bbb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #fff;
+}
+
+/* ACTIONS */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+/* LOGIN */
+.login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login svg {
+    width: 20px;
+    height: 20px;
+    stroke: #d4af37;
+    fill: none;
+    stroke-width: 1.8;
+}
+
+/* BURGER */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 24px;
+    height: 2px;
+    background: #d4af37;
+    border-radius: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+
+    .nav-links,
+    .nav-actions {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.95);
+        backdrop-filter: blur(12px);
+        flex-direction: column;
+        align-items: center;
+        gap: 26px;
+        padding: 40px 0;
+        transform: translateY(-120%);
+        transition: transform .4s ease;
+        z-index: 999;
+    }
+
+    .nav-links.active,
+    .nav-actions.active {
+        transform: translateY(0);
+    }
+
+    .nav-links {
+        margin-bottom: 20px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+
+    .btn-primary {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+/*.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}*/
+
+.navbar.scrolled {
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.95),
+        rgba(0,0,0,0.85)
+    );
+}

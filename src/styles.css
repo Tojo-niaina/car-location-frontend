@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --gold: #d4af37;
+    --bg-dark: #0b0b0b;
+    --bg-card: rgba(255,255,255,0.03);
+    --border-gold: rgba(212,175,55,0.25);
+    --text-muted: #9a9a9a;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #111, #000);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*.btn-primary {
+    background: linear-gradient(135deg, #f1c40f, #f39c12);
+    color: #0b0d12;
+    padding: 18px 32px;
+    border-radius: 18px;
+    font-size: 16px;
+    font-weight: 800;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-shadow: 0 20px 40px rgba(241,196,15,0.45);
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #d4af37, #f1d27a);
+    color: #000;
+    padding: 12px 22px;
+    border-radius: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(212,175,55,.35);
+    transition: transform .3s, box-shadow .3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(212,175,55,.5);
+}*/
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #d4af37;
+}
+
+/*.logo img {
+    height: 40px;
+}*/
+
+.logo img {
+    height: 70px;        /* ajuste selon ton logo */
+    width: auto;
+    display: block;
+}
+
+/* ================= BUTTON ================= */
+.btn-primary {
+    background: linear-gradient(135deg, #f1c40f, #f39c12);
+    color: #0b0d12;
+    padding: 18px 32px;
+    border-radius: 18px;
+    font-size: 16px;
+    font-weight: 800;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-shadow: 0 5px 40px rgba(241,196,15,0.45);
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

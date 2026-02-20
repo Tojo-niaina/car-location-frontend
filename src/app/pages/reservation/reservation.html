@@ -1,0 +1,135 @@
+<section class="payment-page">
+
+    <!-- HEADER -->
+    <div class="page-header">
+        <h1>Finaliser la réservation</h1>
+        <p>Complétez les informations pour confirmer votre réservation</p>
+    </div>
+
+    <div class="payment-layout">
+
+        <!-- LEFT -->
+        <div class="payment-left">
+
+            <!-- INFORMATIONS -->
+            <div class="card-section">
+                <h2>Informations personnelles</h2>
+
+                <div class="grid-2">
+                    <div class="field">
+                        <label>Prénom</label>
+                        <input type="text" placeholder="Jean">
+                    </div>
+                    <div class="field">
+                        <label>Nom</label>
+                        <input type="text" placeholder="Dupont">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Email</label>
+                    <input type="email" placeholder="jean.dupont@email.com">
+                </div>
+
+                <div class="field">
+                    <label>Téléphone</label>
+                    <input type="tel" placeholder="+33 6 12 34 56 78">
+                </div>
+            </div>
+
+            <!-- PAIEMENT -->
+            <div class="card-section">
+                <h2>Méthode de paiement</h2>
+
+                <div class="payment-methods">
+                    <button class="method active">
+                        <!-- Carte -->
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="5" width="20" height="14" rx="3"/>
+                            <line x1="2" y1="10" x2="22" y2="10"/>
+                        </svg>
+                        Carte bancaire
+                    </button>
+
+                    <button class="method">
+                        <span class="paypal">PP</span>
+                        PayPal
+                    </button>
+                </div>
+
+                <div class="field">
+                    <label>Numéro de carte</label>
+                    <input type="text" placeholder="1234 5678 9012 3456">
+                </div>
+
+                <div class="grid-2">
+                    <div class="field">
+                        <label>Date d’expiration</label>
+                        <input type="text" placeholder="MM/AA">
+                    </div>
+                    <div class="field">
+                        <label>CVV</label>
+                        <input type="text" placeholder="123">
+                    </div>
+                </div>
+
+                <!-- SECURITY -->
+                <div class="secure-info">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="5" y="11" width="14" height="10" rx="2"/>
+                        <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+                    </svg>
+                    Vos informations de paiement sont sécurisées et cryptées.
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <aside class="summary-card">
+
+            <!-- BACK -->
+            <a href="/vehicle/1" class="back-btn">← Retour</a>
+
+            <h3>Récapitulatif</h3>
+
+            <div class="vehicle">
+                <img src="/assets/img/car1.jpg" alt="">
+                <div>
+                    <strong>Porsche 911 Turbo</strong>
+                    <span>Premium</span>
+                </div>
+            </div>
+
+            <div class="summary-line">
+                <span>Location (3 jours × 520€)</span>
+                <strong>1560€</strong>
+            </div>
+
+            <div class="summary-line">
+                <span>Assurance tous risques</span>
+                <strong>50€</strong>
+            </div>
+
+            <div class="summary-line">
+                <span>Frais de service</span>
+                <strong>30€</strong>
+            </div>
+
+            <div class="summary-total">
+                <div>
+                    <span>Total</span>
+                    <small>TTC</small>
+                </div>
+                <strong>1640€</strong>
+            </div>
+
+            <button class="pay-btn">Confirmer et payer</button>
+
+            <p class="terms">
+                En confirmant, vous acceptez nos conditions générales de vente
+            </p>
+        </aside>
+
+    </div>
+
+</section>

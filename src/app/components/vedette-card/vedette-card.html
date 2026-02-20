@@ -1,0 +1,45 @@
+<section class="featured">
+    <div class="featured-header">
+        <h2>Véhicules d'<span>Exception</span></h2>
+        <p>
+            Découvrez notre collection exclusive de voitures haut de gamme,
+            soigneusement sélectionnées pour votre plaisir de conduite.
+        </p>
+    </div>
+
+    <div class="featured-container">
+        <!-- Flèche gauche -->
+        <button class="nav-arrow left" (click)="scroll(-1)"> 
+            <svg width="24" height="24" viewBox="0 0 24 24"> 
+                <path d="M15 6l-6 6 6 6" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round"/> 
+            </svg> 
+        </button>
+
+        <div #featuredScroll class="featured-scroll" id="featuredScroll">
+            @for (vehicle of vehicles(); track $index) {
+                <app-vedette [vehicle]="vehicle" ></app-vedette>
+            } @empty {
+                <div>No vehicles vedette found</div>
+            }
+        </div>
+
+        <!-- Flèche droite -->
+        <button class="nav-arrow right" (click)="scroll(1)">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M9 6l6 6-6 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </button>
+    </div>
+</section>

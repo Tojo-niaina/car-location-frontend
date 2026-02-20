@@ -1,0 +1,13 @@
+.footer {
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    color: #ccc;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+    color: #777;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}

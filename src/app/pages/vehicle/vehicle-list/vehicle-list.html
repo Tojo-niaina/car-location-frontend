@@ -1,0 +1,34 @@
+<app-menu></app-menu>
+<section class="collection">
+
+    <!-- HEADER -->
+    <div class="collection-header">
+        <h1>Notre <span>Collection</span></h1>
+        <p>Découvrez l'ensemble de notre flotte de véhicules d'exception.</p>
+
+        <div class="filters">
+            <span class="filter-label">
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 5h16l-6 7v5l-4 2v-7z"/>
+                </svg>
+                Filtrer par :
+            </span>
+
+            <button class="filter active">All</button>
+            <button class="filter">Sport</button>
+            <button class="filter">Premium</button>
+            <button class="filter">Luxe</button>
+            <button class="filter">Supercar</button>
+        </div>
+    </div>
+
+    <!-- GRID -->
+    <div class="vehicle-grid">
+        @for (vehicle of vehicles(); track $index) {
+            <app-vehicle-card [vehicle]="vehicle"></app-vehicle-card>
+        }
+    </div>
+
+</section>
+
+<app-main-footer></app-main-footer>

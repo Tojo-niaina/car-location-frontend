@@ -1,0 +1,165 @@
+<app-menu></app-menu>
+<section class="vehicle-page">
+
+    <!-- IMAGE -->
+    <div class="vehicle-image">
+        <span class="badge">Sport</span>
+        <img src="https://media.lesechos.com/api/v1/images/view/5c0653898fe56f69d133d266/1024x576-webp/021698098919-web.webp" alt="Mercedes AMG GT">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="vehicle-content">
+
+        <h1>Mercedes-AMG GT</h1>
+        <div class="price">450€ <span>/ jour</span></div>
+
+        <p class="description">
+            La Mercedes-AMG GT incarne la perfection sportive avec son design agressif
+            et ses performances exceptionnelles. Équipée d'un moteur V8 biturbo de 4.0L
+            développant 585 chevaux, elle offre des sensations de conduite incomparables.
+        </p>
+
+        <!-- STATS -->
+        <div class="stats">
+            <div class="stat">
+                <strong>2</strong>
+                <span>Places</span>
+            </div>
+            <div class="stat">
+                <strong>Auto</strong>
+                <span>Boîte</span>
+            </div>
+            <div class="stat">
+                <strong>585 ch</strong>
+                <span>Puissance</span>
+            </div>
+        </div>
+
+        <!-- ÉQUIPEMENTS -->
+        <h3>Équipements inclus</h3>
+
+        <div class="features">
+            <div class="feature-item">
+                <span class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M5 13l4 4L19 7"/>
+                    </svg>
+                </span>
+                Moteur V8 4.0L Biturbo
+            </div>
+
+            <div class="feature-item">
+                <span class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M5 13l4 4L19 7"/>
+                    </svg>
+                </span>
+                0-100 km/h en 3.6s
+            </div>
+
+            <div class="feature-item">
+                <span class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M5 13l4 4L19 7"/>
+                    </svg>
+                </span>
+                Système AMG Performance Exhaust
+            </div>
+
+            <div class="feature-item">
+                <span class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M5 13l4 4L19 7"/>
+                    </svg>
+                </span>
+                Suspension adaptative AMG Ride Control
+            </div>
+
+            <div class="feature-item">
+                <span class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M5 13l4 4L19 7"/>
+                    </svg>
+                </span>
+                Intérieur cuir Nappa premium
+            </div>
+
+            <div class="feature-item">
+                <span class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M5 13l4 4L19 7"/>
+                    </svg>
+                </span>
+                Écran multimédia MBUX 12.3 pouces
+            </div>
+        </div>
+
+
+        <!-- RÉSERVATION -->
+        <div class="reservation">
+            <h3>Réserver ce véhicule</h3>
+
+            <div class="form-grid">
+
+                <div class="field with-icon">
+                    <label>Lieu de départ</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                                <path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"/>
+                                <circle cx="12" cy="9" r="2.5"/>
+                            </svg>
+                        </span>
+                        <input type="text" value="Paris, France">
+                    </div>
+                </div>
+            
+                <div class="field with-icon">
+                    <label>Date de départ</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                                <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                <path d="M16 3v4M8 3v4M3 11h18"/>
+                            </svg>
+                        </span>
+                        <input type="date">
+                    </div>
+                </div>
+            
+                <div class="field with-icon">
+                    <label>Date de retour</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                                <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                <path d="M16 3v4M8 3v4M3 11h18"/>
+                            </svg>
+                        </span>
+                        <input type="date">
+                    </div>
+                </div>
+            
+                <div class="field with-icon">
+                    <label>Nombre de jours</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                                <circle cx="12" cy="12" r="9"/>
+                                <path d="M12 7v6l4 2"/>
+                            </svg>
+                        </span>
+                        <input type="number" value="3">
+                    </div>
+                </div>
+            
+            </div>            
+
+            <!-- BOUTON RÉSERVER -->
+            <button (click)="reservation()" class="reserve-btn">
+                Réserver maintenant →
+            </button>
+        </div>
+
+    </div>
+</section>
