@@ -102,3 +102,40 @@ a {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/*========== status vehicle ===============*/
+
+.badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.35);
+}
+
+.status-available {
+  background: #2f9134;
+  border: 1px solid #2f9134;
+  color: #E3F2FD;
+}
+
+.status-rented {
+  background: #1565C0;
+  border: 1px solid #1565C0;
+  color: #E3F2FD;
+}
+
+.status-maintenance {
+  background: #EF6C00;
+  border: 1px solid #EF6C00;
+  color: #E3F2FD;
+}
+
+.status-unavailable {
+  background: #C62828;
+  border: 1px solid #C62828;
+  color: #E3F2FD;
+}

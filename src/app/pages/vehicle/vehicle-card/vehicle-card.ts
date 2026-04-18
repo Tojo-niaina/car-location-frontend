@@ -1,9 +1,11 @@
+import { NgClass } from '@angular/common';
 import { VehicleModel } from '../../../models/VehicleModel';
 import { Component, input } from '@angular/core';
+import { VehicleStatus } from '../../../utils/vehicle.utils';
 
 @Component({
   selector: 'app-vehicle-card',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './vehicle-card.html',
   styleUrl: './vehicle-card.css',
 })

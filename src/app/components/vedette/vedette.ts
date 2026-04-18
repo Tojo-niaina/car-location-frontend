@@ -1,9 +1,10 @@
+import { NgClass } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { VehicleModel } from '../../models/VehicleModel';
 
 @Component({
   selector: 'app-vedette',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './vedette.html',
   styleUrl: './vedette.css',
 })

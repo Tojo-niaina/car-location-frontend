@@ -1,5 +1,10 @@
 <div class="vehicle-card">
-    <span class="badge">{{vehicle().brand}}</span>
+    <span class="badge" [ngClass]="{
+        'status-available': vehicle().status === 'Available',
+        'status-rented': vehicle().status === 'Rented',
+        'status-maintenance': vehicle().status === 'Maintenance',
+        'status-unavailable': vehicle().status === 'Unavailable'
+    }" >{{vehicle().status}}</span>
     <img [src]="vehicle().image" alt="">
     <div class="card-body">
         <h3>{{vehicle().model}}</h3>
@@ -23,13 +28,13 @@
             <div class="stat">
                 <!-- speed -->
                 <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 12l4-4"/></svg>
-                <span>585 ch</span>
+                <span>{{vehicle().power}} ch</span>
             </div>
         </div>
 
         <div class="card-footer">
             <div class="price">
-                <strong>{{vehicle().pricePerDays}}€</strong>
+                <strong>{{vehicle().pricePerDays}} Ar</strong>
                 <span>/jour</span>
             </div>
             <a href="/vehicle/1" class="details-btn">Détails →</a>
