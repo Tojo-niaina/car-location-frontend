@@ -29,7 +29,7 @@ export class VehicleList {
   }
 
   randomVehicleStatus(): VehicleStatus {
-  const statuses = Object.values(VehicleStatus);
-  return statuses[Math.floor(Math.random() * statuses.length)];
-}
+    const statuses = Object.values(VehicleStatus);
+    return statuses[Math.floor(Math.random() * statuses.length)];
+  }
 }
